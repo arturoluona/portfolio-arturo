@@ -1,0 +1,40 @@
+<div class="bg-[rgba(0,0,0,0.58)] w-full fixed py-2 px-4 header-section">
+    <div class="hidden md:flex text-white justify-between items-center">
+        <h1 class="text-3xl">
+            <a href="#home" class="hover:text-main-color">
+                <span class="text-main-color">A</span>rturo <span class="text-main-color">L</span>una
+            </a>
+        </h1>
+
+        <div class="flex gap-5 justify-between items-center">
+            <a href="#about" class="text-xl text-white hover:text-main-color">Acerca de mi</a>
+            <a href="#testimonials" class="text-xl text-white hover:text-main-color">Testimonios</a>
+            <a href="#projects" class="text-xl text-white hover:text-main-color">Proyectos</a>
+            <a href="#footer" class="text-xl text-white hover:text-main-color">Contacto</a>
+
+            <button mat-mini-fab color="white" aria-label="download curriculum" matTooltip="Currículum">
+                <mat-icon>download</mat-icon>
+            </button>
+        </div>
+    </div>
+
+    
+    <div class="flex md:hidden text-white justify-between items-center">
+        <h1 class="text-3xl">
+            <a href="#home" class="hover:text-main-color">
+                <span class="text-main-color">A</span>rturo <span class="text-main-color">L</span>una
+            </a>
+        </h1>
+
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <a mat-menu-item href="#about">Acerca de mi</a>
+            <a mat-menu-item href="#testimonials">Testimonios</a>
+            <a mat-menu-item href="#projects">Proyectos</a>
+            <a mat-menu-item href="#footer">Contacto</a>
+            <a mat-menu-item href="#footer">Descargar CV</a>
+        </mat-menu>
+    </div>
+</div>
