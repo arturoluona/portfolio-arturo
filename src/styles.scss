@@ -50,6 +50,10 @@ body {
   font-weight: 300;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header-section {
   .mat-mdc-mini-fab .mat-icon, .mat-mdc-mini-fab .material-icons {
     color: #585858;
@@ -59,5 +63,3 @@ body {
 .font-title {
   font-family: 'Baloo Tamma 2', cursive;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
