@@ -1,6 +1,6 @@
 <div class="bg-[rgba(255,177,50,.25)] h-full px-2 py-20 md:px-10 md:py-20" >
-    <h1 class="font-title text-6xl text-center">Testimonios</h1>
-    <div class="flex justify-center">
+    <h1 class="font-title text-4xl md:text-6xl text-center">Testimonios</h1>
+    <div class="flex justify-center mt-4">
         <button mat-raised-button  (click)="translateText = !translateText">
             <p>Traducir</p>
             <mat-icon class="text-gray-600" aria-hidden="false" aria-label="Example home icon" fontIcon="translateText"></mat-icon>
@@ -64,10 +64,12 @@
                 Leifer Mendez
                 <mat-icon class="text-gray-600" aria-hidden="false" aria-label="Example home icon" fontIcon="open_in_new"></mat-icon>
             </a>
-
-            <p class="mt-4 text-base">
-                "Arturo ha trabajado conmigo en varios proyectos y tareas, en toda ocasión ha sido muy puntual y rápido. Lo recomiendo ya que siempre busca soluciones y esta constantemente al pendiente de notificar los avances."
-            </p>
+            
+            <div class="h-full mt-4 md:h-[350px] overflow-auto">
+               <p class="mt-4 text-base">
+                    Arturo ha trabajado conmigo en varios proyectos y tareas, en toda ocasión ha sido muy puntual y rápido. Lo recomiendo ya que siempre busca soluciones y esta constantemente al pendiente de notificar los avances.
+                </p> 
+            </div>
         </div>
     </div>
 </div>
