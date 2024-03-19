@@ -1,25 +1,32 @@
 <div class="bg-[rgba(255,177,50,.25)] h-full px-2 py-20 md:px-10 md:py-20" >
     <h1 class="font-title text-6xl text-center">Testimonios</h1>
+    <div class="flex justify-center">
+        <button mat-raised-button  (click)="translateText = !translateText">
+            <p>Traducir</p>
+            <mat-icon class="text-gray-600" aria-hidden="false" aria-label="Example home icon" fontIcon="translateText"></mat-icon>
+        </button>
+    </div>
     
     <div class="flex px-4 md:px-10 pt-10 md:pt-20 gap-16 items-center justify-center flex-wrap w-full">
-        <div 
-            class="h-full p-5 md:h-[600px] w-full md:w-[400px] text-center bg-white shadow-md" 
+        <div
+            class="h-full text-center p-5 md:h-[600px] w-full md:w-[400px] bg-white shadow-md" 
         >
             <div class="flex justify-center mb-4">
-                <img class="rounded-full" width="150" height="150" src="../../../assets/testimonial-leifer.webp" alt="leifer">
+                <img class="rounded-full" width="150" height="150" src="../../../assets/sebastien.jpeg" alt="Sebastien">
             </div>
             
             <a 
-                href="https://www.linkedin.com/in/leifermendez/" target="_blank" 
+                href="https://www.linkedin.com/in/sebc-/" target="_blank" 
                 class="text-2xl hover:text-blue-800 hover:underline flex gap-2 items-center justify-center"
             >
-                Leifer Mendez
+                Sebastien Callebaut
                 <mat-icon class="text-gray-600" aria-hidden="false" aria-label="Example home icon" fontIcon="open_in_new"></mat-icon>
             </a>
 
-            <p class="mt-4 text-base">
-                "Arturo ha trabajado conmigo en varios proyectos y tareas, en toda ocasión ha sido muy puntual y rápido. Lo recomiendo ya que siempre busca soluciones y esta constantemente al pendiente de notificar los avances."
-            </p>
+            <div class="h-full mt-4 md:h-[350px] overflow-auto">
+                <p class="text-base" [innerHTML]="translateText ? sebTextEs : sebTextEn"></p>
+            </div>
+            
         </div>
 
         <div
@@ -38,11 +45,29 @@
             </a>
 
             <div class="h-full mt-4 md:h-[350px] overflow-auto">
-                <p class="text-base" [innerHTML]="austinTransslate ? austinTextEs : austinTextEn"></p>
-
-                <p class="mt-2 text-blue-600 hover:text-blue-800 cursor-pointer hover:underline" (click)="austinTransslate = !austinTransslate">Traducir</p>
+                <p class="text-base" [innerHTML]="translateText ? austinTextEs : austinTextEn"></p>
             </div>
             
+        </div>
+
+        <div 
+            class="h-full p-5 md:h-[600px] w-full md:w-[400px] text-center bg-white shadow-md" 
+        >
+            <div class="flex justify-center mb-4">
+                <img class="rounded-full" width="150" height="150" src="../../../assets/testimonial-leifer.webp" alt="leifer">
+            </div>
+            
+            <a 
+                href="https://www.linkedin.com/in/leifermendez/" target="_blank" 
+                class="text-2xl hover:text-blue-800 hover:underline flex gap-2 items-center justify-center"
+            >
+                Leifer Mendez
+                <mat-icon class="text-gray-600" aria-hidden="false" aria-label="Example home icon" fontIcon="open_in_new"></mat-icon>
+            </a>
+
+            <p class="mt-4 text-base">
+                "Arturo ha trabajado conmigo en varios proyectos y tareas, en toda ocasión ha sido muy puntual y rápido. Lo recomiendo ya que siempre busca soluciones y esta constantemente al pendiente de notificar los avances."
+            </p>
         </div>
     </div>
 </div>
