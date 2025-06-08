@@ -54,21 +54,19 @@
             class="h-full p-5 md:h-[600px] w-full md:w-[400px] text-center bg-white shadow-md" 
         >
             <div class="flex justify-center mb-4">
-                <img class="rounded-full" width="150" height="150" src="../../../assets/testimonial-leifer.webp" alt="leifer">
+                <img class="rounded-full" width="150" height="150" src="../../../assets/gregory.jpg" alt="Gregory">
             </div>
             
             <a 
-                href="https://www.linkedin.com/in/leifermendez/" target="_blank" 
+                href="https://www.linkedin.com/in/gclbt/" target="_blank" 
                 class="text-2xl hover:text-blue-800 hover:underline flex gap-2 items-center justify-center"
             >
-                Leifer Mendez
+                Gregory Callebaut
                 <mat-icon class="text-gray-600" aria-hidden="false" aria-label="Example home icon" fontIcon="open_in_new"></mat-icon>
             </a>
             
             <div class="h-full mt-4 md:h-[350px] overflow-auto">
-               <p class="mt-4 text-base">
-                    Arturo ha trabajado conmigo en varios proyectos y tareas, en toda ocasión ha sido muy puntual y rápido. Lo recomiendo ya que siempre busca soluciones y esta constantemente al pendiente de notificar los avances.
-                </p> 
+                <p class="text-base" [innerHTML]="translateText ? gregTextEs : gregTextEn"></p>
             </div>
         </div>
     </div>
